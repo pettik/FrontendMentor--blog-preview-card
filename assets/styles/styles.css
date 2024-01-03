@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+--grey: hsl(0, 0%, 50%);
+--black: hsl(0, 0%, 7%);
+--yellow: hsl(47, 88%, 63%);
+}
+
+body{
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;;
+    height: 100vh;
+    background:var(--yellow);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-container{
+    background-color: var(--white);
+}
+
+
+
+
+/* =========== FOOTER ===========  */
+.attribution{
+    display:none;
+}
