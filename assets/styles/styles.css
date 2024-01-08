@@ -36,7 +36,7 @@ body {
 }
 
 .article-container {
-  opacity: 0.7;
+  opacity: 0.4;
   height: 500px;
   width: 327px;
 
@@ -78,9 +78,26 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+  margin-bottom: 1.5rem;
+}
+
 .author {
   display: flex;
   align-items: center;
+  column-gap: 0.65rem;
+}
+
+.author img {
+  width: 2.1rem;
+}
+
+.author-name {
+  font-weight: 800;
+  font-size: 0.9rem;
 }
 
 /* =========== FOOTER ===========  */
