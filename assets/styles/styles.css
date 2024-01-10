@@ -140,4 +140,13 @@ h1 {
     box-shadow: 8px 8px 0 var(--black);
     box-shadow: none;
   }
+  .article-container-img {
+    margin-bottom: 1.9rem;
+  }
+
+  .article-container span {
+    font-size: 0.92rem;
+    padding: 0.3rem 0.8rem;
+    background: var(--yellow);
+  }
 }
