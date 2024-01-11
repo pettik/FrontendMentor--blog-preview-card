@@ -129,8 +129,9 @@ h1 {
   }
 
   .article-container {
+    margin-top: 0.4rem;
     opacity: 0.4;
-    height: 520px;
+    height: 522px;
     width: 385px;
 
     background-color: var(--white);
@@ -141,7 +142,7 @@ h1 {
     box-shadow: none;
   }
   .article-container-img {
-    margin-bottom: 1.825rem;
+    margin-bottom: 1.7rem;
   }
 
   .article-container span {
@@ -160,5 +161,6 @@ h1 {
   .description {
     font-size: 1.025rem;
     line-height: 1.5;
+    margin-bottom: 1.4rem;
   }
 }
