@@ -27,7 +27,7 @@ The given sentence translates to: “This challenge was a great opportunity for 
 
 ### Screenshot
 
-<img src="site-preview.JPG" alt="This is my solution of this challenge">
+<img src="design/site-preview.JPG" alt="This is my solution of this challenge">
 
 
 ### Links
