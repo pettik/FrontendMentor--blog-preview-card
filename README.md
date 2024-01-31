@@ -23,7 +23,7 @@ I ensured that my users could:
 
 ### The challenge
 
-The given sentence translates to: “This challenge was a great opportunity for me to practice basic HTML and CSS tags.
+This challenge was a great opportunity for me to practice basic HTML and CSS tags.
 
 ### Screenshot
 
