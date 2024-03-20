@@ -9,36 +9,34 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <!-- ======= TITLE ======= -->
     <title>Frontend Mentor | Blog preview card</title>
-    <!-- ======= GOOGLE FONTS ======= -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap"
       rel="stylesheet"
     />
-    <!-- ======= MY STYLES ======= -->
-    <link rel="stylesheet" href="assets//styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
   <body>
-    <main class="article-container">
-      <div class="article-container-img">
-        <img src="assets/images/illustration-article.svg" alt="Article image" />
+    <main class="article">
+      <div class="article__img">
+        <img src="./assets/images/illustration-article.svg" alt="Article image" />
       </div>
-      <span>Learning</span>
-      <p class="date">Published 21 Dec 2023</p>
-      <a href="#"><h1>HTML & CSS foundations</h1></a>
-      <p class="description">
+      <span class="article__category">Learning</span>
+      <p class="article__date">Published 21 Dec 2023</p>
+      <a href="#"><h1 class="article__title">HTML & CSS foundations</h1></a>
+      <p class="article__description">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
       </p>
       <div class="author">
         <img
-          src="assets/images/image-avatar.webp"
+          src="./assets/images/image-avatar.webp"
           alt="Greg Hooper avatar image"
+          class="author__img"
         />
-        <p class="author-name">Greg Hooper</p>
+        <p class="author__name">Greg Hooper</p>
       </div>
     </main>
     <div class="attribution">
