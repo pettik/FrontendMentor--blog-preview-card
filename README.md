@@ -23,7 +23,7 @@ I ensured that my users could:
 
 ### The challenge
 
-This challenge was a great opportunity for me to practice basic HTML and CSS tags.
+This challenge was a great opportunity for me to practice basic HTML and CSS tags. I recently updated my HTML and CSS files to apply CSS methodology (BEM).
 
 ### Screenshot
 
