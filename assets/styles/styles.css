@@ -18,7 +18,7 @@ img:not(.mobile-card-template, .desktop-card-template, .author__img) {
 }
 
 body {
-  font-family: 'Figtree', sans-serif;
+  font-family: "Figtree", sans-serif;
   font-size: 16px;
   height: 100vh;
   background: var(--yellow);
@@ -104,6 +104,7 @@ a:hover {
 .author__name {
   font-weight: 800;
   font-size: 0.9rem;
+  font-style: normal;
 }
 
 /* =========== FOOTER ===========  */
