@@ -72,6 +72,11 @@ a {
 a:hover {
   color: var(--yellow);
 }
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 223, 70, 0.5);
+  text-decoration: underline;
+}
 
 .article__title {
   font-size: 1.25rem;
