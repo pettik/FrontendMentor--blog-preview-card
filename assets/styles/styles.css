@@ -29,8 +29,8 @@ body {
 }
 
 .article {
-  height: 500px;
-  width: 327px;
+  width: 100%;
+  max-width: 327px;
 
   background-color: var(--white);
   padding: 1.4rem;
