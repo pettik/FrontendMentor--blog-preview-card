@@ -13,19 +13,20 @@
   --yellow: hsl(47, 88%, 63%);
 }
 
-img:not(.mobile-card-template, .desktop-card-template, .author__img) {
-  width: 100%;
+html {
+  font-size: 100%;
 }
 
 body {
   font-family: "Figtree", sans-serif;
-  font-size: 16px;
-  height: 100vh;
+  font-size: 1rem;
+  min-height: 100vh;
   background: var(--yellow);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 1rem;
 }
 
 .article {
@@ -41,13 +42,15 @@ body {
 
 .article__img {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 279 / 200;
   margin-bottom: 1.6rem;
+  overflow: hidden;
 }
 
 .article__img img {
-  height: 100%;
+  display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 0.8rem;
 }
@@ -66,15 +69,18 @@ body {
 a {
   text-decoration: none;
   color: var(--black);
-  transition: color 0.3s;
+  transition:
+    color 0.3s,
+    box-shadow 0.3s;
 }
 
 a:hover {
   color: var(--yellow);
 }
+
 a:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(255, 223, 70, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(255, 223, 70, 0.5);
   text-decoration: underline;
 }
 
@@ -117,15 +123,10 @@ a:focus-visible {
 }
 
 /* =========== MEDIA QUERIES ===========  */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90rem) {
   .article {
     margin-top: 0.4rem;
     max-width: 385px;
-
-    background-color: var(--white);
-    padding: 1.4rem;
-    border: 2px solid var(--black);
-    border-radius: 1.25rem;
     box-shadow: 6px 6px 0 var(--black);
   }
 
@@ -136,7 +137,6 @@ a:focus-visible {
   .article__category {
     font-size: 0.92rem;
     padding: 0.25rem 0.75rem;
-    background: var(--yellow);
   }
 
   .article__date {
@@ -151,5 +151,16 @@ a:focus-visible {
     font-size: 1.025rem;
     line-height: 1.5;
     margin-bottom: 1.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
   }
 }
