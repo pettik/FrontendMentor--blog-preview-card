@@ -11,6 +11,8 @@
   --grey: hsl(0, 0%, 50%);
   --black: hsl(0, 0%, 7%);
   --yellow: hsl(47, 88%, 63%);
+  --radius-card: 1.25rem;
+  --radius-image: 0.8rem;
 }
 
 html {
@@ -30,13 +32,12 @@ body {
 }
 
 .article {
-  width: 100%;
-  max-width: 327px;
+  max-width: 24.0625rem;
 
   background-color: var(--white);
   padding: 1.4rem;
   border: 2px solid var(--black);
-  border-radius: 1.25rem;
+  border-radius: var(--radius-card);
   box-shadow: 8px 8px 0 var(--black);
 }
 
@@ -45,6 +46,7 @@ body {
   aspect-ratio: 279 / 200;
   margin-bottom: 1.6rem;
   overflow: hidden;
+  border-radius: var(--radius-image);
 }
 
 .article__img img {
@@ -52,7 +54,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0.8rem;
 }
 
 .article__category {
@@ -126,7 +127,7 @@ a:focus-visible {
 @media screen and (min-width: 90rem) {
   .article {
     margin-top: 0.4rem;
-    max-width: 385px;
+    max-width: 24.0625rem;
     box-shadow: 6px 6px 0 var(--black);
   }
 
@@ -155,12 +156,7 @@ a:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
+  a {
+    transition: none;
   }
 }
