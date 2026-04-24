@@ -109,7 +109,6 @@ a:focus-visible {
 .author__name {
   font-weight: 800;
   font-size: 0.9rem;
-  font-style: normal;
 }
 
 /* =========== FOOTER ===========  */
@@ -121,8 +120,7 @@ a:focus-visible {
 @media screen and (min-width: 1440px) {
   .article {
     margin-top: 0.4rem;
-    height: 522px;
-    width: 385px;
+    max-width: 385px;
 
     background-color: var(--white);
     padding: 1.4rem;
